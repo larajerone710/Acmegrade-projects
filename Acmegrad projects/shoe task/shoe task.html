@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-header {
+            background-color: #ddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .card-body {
+            padding: 20px;
+            background-color: #7ED957;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .product-image {
+            width: 180px;
+            height: 180px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .quantity-controls input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .quantity-controls button {
+            background-color: #7ED957;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #FFCC00;
+            color: black;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #ffdb4d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">Black Formal</div>
+        <div class="card-body">
+            <div class="product-image">
+                <img src="shoe1.jpg" alt="Black Formal Shoe">
+            </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Login Page</title>  
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #5dd6f3 20%, #9f01ea 90%);
+            margin: 0;
+        }
+        button {
+            background-color: #28a745;
+            width: 100%;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;   
+            margin: 10px 0;  
+            padding: 12px 15px;   
+            border: 2px solid #00796b;
+            border-radius: 6px;
+        }
+        .container {
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 100px auto;
+        }
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0;
+        }
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+        h1 {
+            color: #2e4053;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgcontainer">
+            <img src="https://media-exp1.licdn.com/dms/image/C560BAQGMqwx-5kcjgg/company-logo_200_200/0/1660050202339?e=2147483647&v=beta&t=x2GP5sBfpzp_2lxX3SlPEPofnvPIIaF4OMG5ibYEFO4" alt="Avatar" class="avatar">
+        </div>
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <input type="text" name="uname" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked> Remember me
+            </label>
+            <button type="button" class="btn btn-secondary mt-2">Cancel</button>
+            <a href="#">Forgot password?</a>
+        </form>
+    </div>
+</body>
+</html>
+

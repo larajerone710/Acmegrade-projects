@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+    .parent
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 99vh;
+
+    }
+    .form
+    {
+        display:flex;
+        flex-direction: column;
+        height: 300px;
+        padding:30px;
+        width:fit-content;
+        background-color: yellow;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .input
+    {
+        padding: 10px;
+        outline:none;
+        border:1px solid grey;
+
+    }
+   </style>
+    </head>
+    <body>
+        <div class="parent">
+
+            <form action="registration.php" class="form" method="POST">
+                <h4>Registration Form</h4>
+                <input type="text" name="username" placeholder="enter username">
+                <input type="password" name="password1" placeholder="enter password">
+                <input type="password" name="password2" placeholder="retype password">
+                <input type="number" name="mobile" placeholder="enter mobile number">
+
+                <input type="Submit" value="Register">
+            </form>
+        </div>
+
+    </body>
+</html>
